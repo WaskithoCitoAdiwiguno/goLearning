@@ -11,7 +11,7 @@ var DB *sql.DB
 
 func InitDB() {
     var err error
-    connStr := "root@tcp(localhost:3306)/go_learning"
+    connStr := "root:p3ws@tcp(localhost:3306)/go_learning"
     DB, err = sql.Open("mysql", connStr)
     if err != nil {
         log.Fatal(err)
